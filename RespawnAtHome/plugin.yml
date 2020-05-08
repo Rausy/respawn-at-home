@@ -1,7 +1,0 @@
-name: RespawnAtHome
-description: Forcibly respawn players at their Essentials home
-author: Raus
-main: com.raus.respawnAtHome.Main
-version: 1.0
-api-version: 1.15
-depend: [Essentials]
