@@ -12,12 +12,12 @@ import com.earth2me.essentials.User;
 
 public class RespawnListener implements Listener
 {
+	// Get essentials plugin
+	private Essentials ess = (Essentials) Bukkit.getPluginManager().getPlugin("Essentials");
+	
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onRespawn(PlayerRespawnEvent event) throws Exception
 	{
-		// Get essentials plugin
-		Essentials ess = (Essentials) Bukkit.getPluginManager().getPlugin("Essentials");
-		
 		// Get essentials user
 		User user = ess.getUser(event.getPlayer().getUniqueId());
 		
